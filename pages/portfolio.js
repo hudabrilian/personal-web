@@ -35,7 +35,7 @@ function Portfolio() {
                 {projects.map(project => (
                     <motion.div className="flex flex-col items-center border-2 rounded-xl p-5 m-3" variants={fadeInUp} whileHover={{ scale: 1.05 }}>
                         <motion.div variants={fadeInUp}>
-                            <motion.img src={`/img/${project.image}`} className="rounded-lg h-64 mx-4 my-4" alt={project.title} initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: .5 }} />
+                            <motion.img src={`/img/${project.image}`} className="rounded-lg max-h-64 my-4" alt={project.title} initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: .5 }} />
                         </motion.div>
                         <motion.div variants={fadeInUp} transition={{  delay: .5  }} className="my-2 px-6">
                             <motion.h1 className="text-xl font-semibold text-center" variants={fadeInUp} transition={{  delay: 1  }}>{project.title}</motion.h1>
