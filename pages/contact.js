@@ -4,7 +4,7 @@ function Contact() {
   return (
     <motion.div className="mb-5" exit={{ opacity: 0 }}>
       <motion.h1 className="text-2xl font-bold pt-10 text-center" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: .5 }}>Contact me</motion.h1>
-      <motion.h2 className="text-center mt-2 text-gray-500">Get in touch with me!</motion.h2>
+      <motion.h2 className="text-center mt-2 text-gray-500" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: .5, delay: .3 }}>Get in touch with me!</motion.h2>
       <motion.div className="flex items-center justify-center py-10" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: .5, delay: .5 }}>
         <form className="py-10 px-10 rounded-md border-2 flex flex-col items-center justify-center">
           <div className="flex w-full items-center mt-3">
