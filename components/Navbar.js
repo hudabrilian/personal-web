@@ -2,7 +2,7 @@ import Link from 'next/link'
 
 function Navbar() {
     return (
-        <div className="py-6 md:px-20 px-5 flex justify-between items-center">
+        <div className="py-6 md:px-20 sticky top-0 px-5 flex justify-between bg-white z-10 items-center">
             <h1 className="text-3xl font-semibold">Brilian.</h1>
             <div className="flex">
                 <Link href="/">

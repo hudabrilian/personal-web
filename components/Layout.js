@@ -13,7 +13,7 @@ function Layout({ children }) {
                 <meta name="language" content="EN" />
                 <meta name="viewport" content="initial-scale=1.0, width=device-width" />
             </Head>
-            <div className="min-h-screen h-screen">
+            <div className="min-h-screen h-full">
                 <Navbar />
                 { children }
                 <Footer />

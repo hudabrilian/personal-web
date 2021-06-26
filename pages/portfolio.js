@@ -38,8 +38,13 @@ function Portfolio() {
                             <motion.img src={`/img/${project.image}`} className="rounded-lg max-h-64 my-4" alt={project.title} initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: .5 }} />
                         </motion.div>
                         <motion.div variants={fadeInUp} transition={{  delay: .5  }} className="my-2 px-6">
-                            <motion.h1 className="text-xl font-semibold text-center" variants={fadeInUp} transition={{  delay: 1  }}>{project.title}</motion.h1>
-                            <motion.p variants={fadeInUp} transition={{  delay: .5  }} className="text-center mt-2">{project.description}</motion.p>
+                            <motion.div className="flex items-center justify-center" variants={staggered}>
+                                {project.tags.map(tag => (
+                                    <motion.div className="mx-2 bg-gray-500 text-white px-3 py-1 text-sm rounded-xl" variants={fadeInUp}>{tag}</motion.div>
+                                ))}
+                            </motion.div>
+                            <motion.h1 className="text-xl font-semibold text-center mt-4 mb-2" variants={fadeInUp} transition={{  delay: 1  }}>{project.title}</motion.h1>
+                            <motion.p variants={fadeInUp} transition={{  delay: .5  }} className="text-center">{project.description}</motion.p>
                         </motion.div>
                     </motion.div>
                 ))}
