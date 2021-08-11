@@ -42,7 +42,7 @@ function Home() {
           </motion.div>
         </div>
         <div className="flex w-1/2 md:mr-32 justify-center items-center">
-          <motion.img src="img/psy.gif" className="rounded-xl min-h-64" initial={{ scale: .5 }} animate={{ scale: 1 }} whileHover={{ scale: 1.2 }} transition={{ duration: 0.5 }}></motion.img>
+          <motion.img src="img/huda11.jpg" className="rounded-xl min-h-64" initial={{ scale: .5 }} animate={{ scale: 1 }} whileHover={{ scale: 1.2 }} transition={{ duration: 0.5 }}></motion.img>
         </div>
       </div>
 
